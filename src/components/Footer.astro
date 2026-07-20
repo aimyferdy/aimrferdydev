@@ -9,483 +9,263 @@ const {
 } = await getFooterData();
 ---
 
-<!-- FOOTER -->
-<footer class="footer-modern">
-  <div class="container">
-
-    <div class="footer-grid">
-
-      <!-- LATEST POSTS -->
-      <div class="footer-links latest">
-        <p class="footer-title">Latest Posts</hp>
-
-        {latestPosts.map((post) => (
-          <a href={`/blog/${post.slug}/`}>
-            {post.data.title}
-          </a>
-        ))}
-      </div>
-
-      <!-- POPULAR TOOLS -->
-      <div class="footer-links popular">
-        <p class="footer-title">Popular Tools</p>
-
-        {popularTools.map((tool) => (
-          <a href={`/tools/${tool.slug}/`}>
-            {tool.data.title}
-          </a>
-        ))}
-
-
-<p class="footer-title">Featured Products</p>
-
-        {featuredProducts.map((product) => (
-          <a href={`/product/${product.slug}/`}>
-            {product.data.title}
-          </a>
-        ))}
-      </div>
-
-      <!-- FEATURED PRODUCTS 
-      <div class="footer-links">
-        <h4>Featured Products</h4>
-
-        {featuredProducts.map((product) => (
-          <a href={`/product/${product.slug}/`}>
-            {product.data.title}
-          </a>
-        ))}
-      </div>-->
-
-
-   <!-- COMPANY -->
-<div class="footer-service">
-  <div class="footer-col">
-    <p class="footer-title">Company</p>
-
-    <a href="/about">About</a>
-    <!-- <a href="/services">Services</a> -->
-    <a href="/pricing">Pricing</a>
-    <a href="/contact">Contact</a>
-  </div>
-
-  <div class="footer-col">
-    <a href="/terms">Terms</a>
-    <a href="/disclaimer">Disclaimer</a>
-    <a href="/faq">Faq</a>
-    <a href="/tos">Tos</a>
-  </div>
-</div>
-
-
-
-      <!-- ABOUT -->
-      <div class="footer-about">
-        <p class="footer-brand">AI Mr Ferdy</p>
-
-        <p>
-         Platform AI Indonesia yang menyediakan berbagai AI tools, panduan, dan sumber daya untuk membantu individu maupun bisnis memanfaatkan kecerdasan buatan secara lebih mudah.
-        </p>
-
-        <p>
-		📍 Jakarta, Indonesia <br/> 
-		✉️ hello@aimrferdy.com
-		</p>
-
-        
-<p>
-  <a
-    href="https://www.dmca.com/Protection/Status.aspx?ID=ad07e0ec-05fb-415a-80cc-0c9cf66f816e&amp;refurl=https://www.aimrferdy.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="DMCA Protected"
-  >
-    <img
-      src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-01.png"
-      alt="DMCA Protected"
-      width="60"
-      height="12"
-      loading="lazy"
-    />
-  </a>
-</p>
-
-      </div>
-
-
-
-    </div>
-
-    <div class="footer-bottom">
-
-<div class="footer-social">
-  <!-- Instagram -->
-  <a href="https://www.instagram.com/aimrferdyofficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-      <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm8.75 1a1.25 1.25 0 1 0 0 2.5A1.25 1.25 0 0 0 16.5 5zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6a3 3 0 0 1 0-6z"/>
-    </svg>
-  </a>
-
-  <!-- Medium -->
-  <a href="https://medium.com/@aimrferdy" target="_blank" rel="noopener noreferrer" aria-label="Medium">
-    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-      <path d="M2 6.5l2.2 2.8v8.2L2 20v.5h6V20l-2-2.5V9.7l5 10.8h.7l4.3-10.8v9.7L14 20v.5h8V20l-1.8-1.7V7.7L22 6V5.5h-5.7l-4 9.8L8.8 5.5H2z"/>
-    </svg>
-  </a>
-
-  <!-- GitHub -->
-  <a href="https://github.com/aimrfredy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-      <path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.11.79-.25.79-.56v-2.15c-3.2.69-3.88-1.54-3.88-1.54c-.52-1.33-1.28-1.69-1.28-1.69c-1.05-.72.08-.7.08-.7c1.16.08 1.77 1.19 1.77 1.19c1.03 1.77 2.7 1.26 3.36.97c.1-.75.4-1.26.73-1.55c-2.55-.29-5.23-1.28-5.23-5.68c0-1.25.45-2.28 1.18-3.08c-.12-.29-.51-1.46.11-3.05c0 0 .97-.31 3.18 1.18a10.98 10.98 0 0 1 5.8 0c2.21-1.49 3.18-1.18 3.18-1.18c.62 1.59.23 2.76.11 3.05c.73.8 1.18 1.83 1.18 3.08c0 4.41-2.69 5.39-5.25 5.67c.41.35.78 1.05.78 2.12v3.14c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
-    </svg>
-  </a>
-
-  <!-- YouTube -->
-  <a href="https://www.youtube.com/@ai-mr-ferdy" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-      <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2A31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.7 31.7 0 0 0 24 12a31.7 31.7 0 0 0-.5-5.8zM9.6 15.5v-7L16 12l-6.4 3.5z"/>
-    </svg>
-  </a>
-
-  <!-- X -->
-  <a href="https://x.com/ai_mr_ferdy" target="_blank" rel="noopener noreferrer" aria-label="X">
-    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-      <path d="M18.9 2H22l-6.8 7.8L23 22h-6.1l-4.8-6.3L6.6 22H3.5l7.2-8.2L1 2h6.2l4.3 5.7L18.9 2zm-1.1 18h1.7L6.3 3.9H4.5L17.8 20z"/>
-    </svg>
-  </a>
-
-
-<a href="https://web.facebook.com/ai.mr.ferdy" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-  <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-    <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6h1.7V4.8c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.2V11H8v3h2.4v8h3.1z"/>
-  </svg>
-</a>
-
-<a href="https://heylink.me/mrferdy" target="_blank" rel="noopener noreferrer" aria-label="HeyLink">
-  <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
-    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-    <path d="M8 8v8M8 12h4M12 8v8M16 8v8h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-  </svg>
-</a>
-
-</div>
-
-      <p>
-        © {new Date().getFullYear()} {SITE.name}
-      </p>
-    </div>
-
-  </div>
+<footer class="footer">
+ <div class="footer-inner">
+ <div class="footer-grid">
+ <div class="footer-brand">
+ <h3>Ai Mr Ferdy Pro</h3>
+ <p>Before joining Ai Mr Ferdy Pro, review our terms, payment options and account-eligibility notes — service availability is jurisdiction-restricted.</p>
+ <div style="display:flex;align-items:center;gap:10px;margin-top:8px"><span style="font-size:11.5px;color:var(--bs-secondary-color)">Account eligibility subject to applicable law.</span></div>
+ </div>
+ <div class="footer-col"><h4>Quick links</h4><a href="about-us/">About us</a><a href="terms-conditions/">Terms</a><a href="privacy-policy/">Privacy policy</a><a href="legal/">Legal notice</a></div>
+ <div class="footer-col"><h4>Support</h4><a href="register/">Open account</a><a href="login/">Member login</a><a href="app/">App</a><a href="faq/">FAQ</a><a href="sitemap.xml">Sitemap</a></div>
+ <div class="footer-col"><h4>Contact us</h4><span class="text-body-secondary"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="137b767f635360667f67727d7e767d727d743d726363">[email&#160;protected]</a></span></div>
+ </div>
+ <div class="footer-bottom">
+ <span class="footer-copy">© 2026 Ai Mr Ferdy Pro. All rights reserved.</span>
+ <span class="footer-copy">Service-led experience</span>
+ </div>
+ </div>
 </footer>
 
-
-
-<style>
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-  margin-top:80px;
-  padding:40px 20px;
-
-  border-top:1px solid var(--border);
-
-  text-align:left;
-  color:var(--muted);
-
-  font-size:14px;
-}
-
-/* =========================
-   FOOTER MODERN
-========================= */
-
-.footer-modern{
-  padding:80px 0 26px;
-
-  border-top:1px solid var(--border);
-
-  /* FIX LIGHT/DARK */
-  background:var(--bg-secondary);
-
-  overflow:hidden;
-}
-
-/* =========================
-   CONTAINER
-========================= */
-
-.footer-modern .container{
-  width:100%;
-  max-width:1200px;
-
-  margin:auto;
-  padding:0 20px;
-
-  box-sizing:border-box;
-}
-
-/* =========================
-   GRID LAYOUT
-========================= */
-
-.footer-grid{
-  display:grid;
-
-  /* Latest | Popular | Service | About */
-  grid-template-columns:
-    minmax(0, 1.4fr)
-    minmax(0, 1.4fr)
-    minmax(0, 0.6fr)
-    minmax(0, 1.3fr);
-
-  gap:40px;
-
-  width:100%;
-  align-items:flex-start;
-}
-
-/* IMPORTANT FIX */
-.footer-grid > *{
-  min-width:0;
-}
-
-/* =========================
-   ABOUT
-========================= */
-
-.footer-brand{
-  margin:0 0 20px;
-  font-size:18px;
-  font-weight:700;
-  line-height:1.2;
-  letter-spacing:1px;
-  color:var(--text);
-}
-
-.footer-about p{
-  color:var(--text-soft);
-
-  font-size:15px;
-  line-height:1.9;
-
-  margin-bottom:16px;
-
-  overflow-wrap:break-word;
-}
-
-/* =========================
-   TITLES
-========================= */
-
-.footer-title{
-  margin:0 0 18px;
-  font-size:18px;
-  font-weight:700;
-  line-height:1.3;
-  color:var(--text);
-}
-
-.footer-title:not(:first-child){
-  margin-top:28px;
-}
-
-/* =========================
-   LINKS
-========================= */
-
-.footer-service a,
-.footer-links a{
-  display:block;
-
-  color:var(--text-soft);
-  text-decoration:none;
-
-  font-size:15px;
-  line-height:1.7;
-
-  overflow-wrap:break-word;
-  word-break:break-word;
-
-  transition:
-    transform .2s ease,
-    opacity .2s ease,
-    color .2s ease;
-}
-
-/* company/social spacing */
-
-.footer-service a{
-  margin-bottom:10px;
-}
-
-/* latest/popular spacing */
-
-.footer-links{
-  display:flex;
-  flex-direction:column;
-}
-
-.footer-links a{
-  margin-bottom:16px;
-
-  display:-webkit-box;
-  -webkit-line-clamp:2;
-  -webkit-box-orient:vertical;
-
-  overflow:hidden;
-  text-overflow:ellipsis;
-}
-
-/* hover */
-
-.footer-service a:hover,
-.footer-links a:hover{
-  color:var(--text);
-
-  opacity:1;
-
-  transform:translateX(4px);
-}
-
-/* =========================
-   FOOTER BOTTOM
-========================= */
-
-.footer-bottom{
-  margin-top:70px;
-  padding-top:26px;
-
-  border-top:1px solid var(--border);
-
-  text-align:center;
-
-  color:var(--text-soft);
-  font-size:14px;
-}
-
-/* =========================
-   TABLET
-========================= */
-
-@media(max-width:1024px){
-
-  .footer-grid{
-    grid-template-columns:1fr 1fr;
-    gap:42px 28px;
+<a href="#top" class="back-top" id="backTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑</a>
+<nav class="mobile-nav"><ul><li><a href="./" class="active"><i class="bi bi-house-door-fill m-icon" aria-hidden="true"></i><span class="m-label">Home</span></a></li><li><a href="pg-soft/"><i class="bi bi-controller m-icon" aria-hidden="true"></i><span class="m-label">PG Soft</span></a></li><li><a href="quickspin/"><i class="bi bi-suit-spade-fill m-icon" aria-hidden="true"></i><span class="m-label">Quickspin</span></a></li><li><a href="shopeepay-deposit/"><i class="bi bi-gift-fill m-icon" aria-hidden="true"></i><span class="m-label">ShopeePay Deposit</span></a></li><li><a href="tarung-mesin/"><i class="bi bi-person-circle m-icon" aria-hidden="true"></i><span class="m-label">Tarung Mesin</span></a></li></ul></nav>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>function toggleNav(){var n=document.getElementById("navLinks");if(n)n.classList.toggle("open")}
+(function(){
+  setTimeout(function(){var sb=document.getElementById("stickyBar");if(sb)sb.classList.add("show")},2500);
+  var bt=document.getElementById("backTop");
+  window.addEventListener("scroll",function(){if(bt)bt.classList.toggle("show",window.scrollY>600)},{passive:true});
+  var tocLinks=document.querySelectorAll(".toc-bar a[href^=\"#\"],.hero-toc a[href^=\"#\"]");
+  if(tocLinks.length){
+    var secs=Array.prototype.map.call(tocLinks,function(a){return document.querySelector(a.getAttribute("href"))});
+    var navEl=document.querySelector(".top-nav"),tocEl=document.querySelector(".toc-bar");
+    var navH=0,tocH=0,secsTop=[];
+    function measure(){
+      navH=navEl?navEl.offsetHeight:0;
+      tocH=tocEl?tocEl.offsetHeight:0;
+      secsTop=secs.map(function(s){return s?s.offsetTop:0});
+    }
+    measure();
+    window.addEventListener("resize",measure,{passive:true});
+    window.addEventListener("load",measure);
+    var rafPending=false;
+    window.addEventListener("scroll",function(){
+      if(rafPending)return;rafPending=true;
+      requestAnimationFrame(function(){rafPending=false;
+        var y=window.scrollY,off=navH+tocH+12,idx=0;
+        for(var i=0;i<secsTop.length;i++)if(y>=secsTop[i]-off)idx=i;
+        for(var j=0;j<tocLinks.length;j++)tocLinks[j].classList.toggle("toc-active",j===idx);
+      });
+    },{passive:true});
   }
-
-  .footer-about{
-    grid-column:1/-1;
+  function markScrollHints(){
+    var els=document.querySelectorAll(".toc-scroll,.hero-toc,.categories,.notice-marquee");
+    var flags=[];
+    for(var i=0;i<els.length;i++)flags[i]=els[i].scrollWidth>els[i].clientWidth+2;
+    for(var k=0;k<els.length;k++)els[k].classList.toggle("has-scroll-hint",flags[k]);
   }
-
+  if(window.requestAnimationFrame)requestAnimationFrame(markScrollHints);else markScrollHints();
+  window.addEventListener("resize",markScrollHints,{passive:true});
+  document.addEventListener("click",function(e){
+    var btn=e.target.closest&&e.target.closest(".tab-btn");if(!btn)return;
+    var tabs=btn.closest(".tabs");if(!tabs)return;
+    var target=btn.getAttribute("data-target");
+    var panels=tabs.querySelectorAll(".tab-panel");
+    var buttons=tabs.querySelectorAll(".tab-btn");
+    var targetEl=null;
+    if(target){var sel=target.charAt(0)==="#"?target:"#"+target;try{targetEl=tabs.querySelector(sel)}catch(_){}}
+    if(!targetEl){var idx=Array.prototype.indexOf.call(buttons,btn);if(idx>=0&&panels[idx])targetEl=panels[idx]}
+    if(!targetEl)return;
+    buttons.forEach(function(b){b.classList.remove("active")});
+    panels.forEach(function(p){p.classList.remove("active")});
+    btn.classList.add("active");
+    targetEl.classList.add("active");
+  });
+})();</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+<!-- br-stick-popup -->
+<style id="br-stick-coexist">
+@media(max-width:768px){
+  #br-stick{bottom:60px!important;}
+  .back-top{bottom:138px!important;}
 }
-
-/* =========================
-   SERVICE
-========================= */
-
-.footer-service{
-  display:block;
-}
-
-/* =========================
-   MOBILE SERVICE GRID
-========================= */
-
-@media(max-width:640px){
-
-  .footer-service{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:24px;
-  }
-
-  .footer-col h4{
-    margin-bottom:14px;
-  }
-
-  .footer-col a{
-    font-size:14px;
-    margin-bottom:10px;
-  }
-
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:640px){
-
-  .footer-modern{
-    padding:60px 0 24px;
-  }
-
-  .footer-modern .container{
-    padding:0 18px;
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr;
-    gap:36px;
-  }
-
-  .footer-about h3{
-    font-size:28px;
-  }
-
-  .footer-about p{
-    font-size:14px;
-    line-height:1.8;
-  }
-
-  .footer-service h4,
-  .footer-links h4{
-    font-size:17px;
-    margin-bottom:16px;
-  }
-
-  .footer-service a,
-  .footer-links a{
-    font-size:14px;
-  }
-
-  .footer-bottom{
-    margin-top:50px;
-    font-size:13px;
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-.footer-social {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.footer-social a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-color, #94a3b8);
-  transition: all .2s ease;
-}
-
-.footer-social a:hover {
-  color: var(--accent-color, #3b82f6);
-  transform: translateY(-2px);
+@media(min-width:769px){
+  .back-top{bottom:112px!important;}
 }
 </style>
+<script>
+(function () {
+  "use strict";
+  var CFG = {
+    showDelay: 0,
+    loginUrls: ["https://d2r3e58s.com/IDR-en/home?refid=AVA9BKXQH", "https://f5gz177v.com/IDR-en/home?refid=AVA9BKXQH", "https://yn8on2a9.com/IDR-en/home?refid=AVA9BKXQH", "https://8t1f89cm.com/IDR-en/home?refid=AVA9BKXQH", "https://4yi9e6cn.com/IDR-en/home?refid=AVA9BKXQH"],
+    registerUrls: ["https://d2r3e58s.com/IDR-en/home?refid=AVA9BKXQH", "https://f5gz177v.com/IDR-en/home?refid=AVA9BKXQH", "https://yn8on2a9.com/IDR-en/home?refid=AVA9BKXQH", "https://8t1f89cm.com/IDR-en/home?refid=AVA9BKXQH", "https://4yi9e6cn.com/IDR-en/home?refid=AVA9BKXQH"],
+    loginLabel: "Masuk",
+    registerLabel: "Daftar Sekarang",
+    badgeLabel: "BONUS 100%"
+  };
+  if (window.__brStickSimple) return; window.__brStickSimple = true;
+
+  function pickUrl(urls) {
+    if (!urls || !urls.length) return "#";
+    return urls[Math.floor(Math.random() * urls.length)];
+  }
+  function randomPrefix(len) {
+    var chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
+    var out = '';
+    for (var i = 0; i < len; i++) out += chars.charAt(Math.floor(Math.random() * chars.length));
+    return out;
+  }
+  function addRandomDomainPrefix(url) {
+    if (!url || url === '#' || /^(mailto:|tel:)/i.test(url)) return url;
+    var protocolRelative = url.indexOf('//') === 0;
+    var source = protocolRelative ? window.location.protocol + url : url;
+    try {
+      var a = document.createElement('a');
+      a.href = source;
+      if (!/^https?:$/i.test(a.protocol) || !a.hostname) return url;
+      a.hostname = randomPrefix(4 + Math.floor(Math.random() * 5)) + '.' + a.hostname.replace(/^\.+/, '');
+      return protocolRelative ? a.href.replace(/^https?:/i, '') : a.href;
+    } catch (e) {
+      return url;
+    }
+  }
+  var registerUrl = addRandomDomainPrefix(pickUrl(CFG.registerUrls));
+  var loginUrl = addRandomDomainPrefix(pickUrl(CFG.loginUrls));
+
+  var css = ''
+    + '#br-stick{position:fixed;bottom:0;left:0;z-index:2147483646;box-sizing:border-box;'
+    + 'width:100%;max-width:100%;overflow:hidden;'
+    + 'font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;transform:translateZ(0);will-change:transform;background:transparent;padding:10px 12px;}'
+    + '@supports (width:100svw) and (max-width: 768px){#br-stick{width:100svw;max-width:100svw;}}'
+    + '@supports (width:100dvw) and (max-width: 768px){#br-stick{width:100dvw;max-width:100dvw;}}'
+    + '@media (min-width: 769px) {'
+    + '  #br-stick {'
+    + '    left: 50%;'
+    + '    transform: translateX(-50%) translateZ(0);'
+    + '    max-width: 620px;'
+    + '    width: min(620px, calc(100vw - 30px));'
+    + '    border-radius: 12px 12px 0 0;'
+    + '    overflow: hidden;'
+    + '  }'
+    + '}'
+    + '@media (max-width: 768px) {'
+    + '  #br-stick {'
+    + '    left: 0;'
+    + '    right: 0;'
+    + '    transform: translateZ(0);'
+    + '    padding-left: env(safe-area-inset-left);'
+    + '    padding-right: env(safe-area-inset-right);'
+    + '    width: 100vw;'
+    + '    max-width: 100vw;'
+    + '  }'
+    + '  @supports (width:100svw){#br-stick{width:100svw;max-width:100svw;}}'
+    + '  @supports (width:100dvw){#br-stick{width:100dvw;max-width:100dvw;}}'
+    + '}'
+    + '#br-stick .br-stick-wrap{width:100%!important;max-width:100%!important;margin:0 auto!important;padding:0!important;background:transparent!important;box-sizing:border-box!important;}'
+    + '#br-stick .br-stick-card{position:relative!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:12px!important;border:1px solid rgba(255,213,74,.72)!important;border-radius:16px!important;overflow:hidden!important;box-shadow:0 10px 28px rgba(0,0,0,.32),inset 0 1px 0 rgba(255,255,255,.16)!important;background:linear-gradient(135deg,#7A0C11 0%,#B30F19 48%,#E3212C 100%)!important;margin:0!important;padding:8px 8px 8px 14px!important;box-sizing:border-box!important;}'
+    + '#br-stick .br-stick-close{flex:0 0 32px!important;width:32px;height:32px;border-radius:50%;'
+    + 'background:rgba(122,12,17,.42);color:#fff;border:1px solid rgba(255,255,255,.78);display:flex;align-items:center;justify-content:center;'
+    + 'font-size:22px;line-height:1;cursor:pointer;transition:all 0.3s ease;}'
+    + '#br-stick .br-stick-close:hover{background:#8F1010;}'
+    + '#br-stick .br-stick-promo{flex:0 0 auto!important;min-width:0!important;display:flex!important;align-items:center!important;gap:8px!important;margin:0!important;padding:0!important;}'
+    + '#br-stick .br-stick-gift{flex:0 0 48px!important;width:48px!important;height:48px!important;display:flex!important;align-items:center!important;justify-content:center!important;font-size:38px!important;line-height:1!important;filter:drop-shadow(0 3px 5px rgba(0,0,0,.35));}'
+    + '#br-stick .br-stick-offer{min-width:0!important;color:#fff!important;text-align:left!important;}'
+    + '#br-stick .br-stick-kicker{display:block!important;color:#fff!important;font-size:20px!important;font-weight:900!important;line-height:1!important;letter-spacing:.2px!important;text-transform:uppercase!important;white-space:nowrap!important;text-shadow:0 1px 2px rgba(0,0,0,.35)!important;}'
+    + '#br-stick .br-stick-kicker strong{color:#FFD54A!important;font-size:32px!important;line-height:.9!important;}'
+    + '#br-stick .br-stick-copy{display:block!important;margin-top:4px!important;color:#FFE8E8!important;font-size:12px!important;font-weight:500!important;line-height:1.1!important;white-space:nowrap!important;text-shadow:0 1px 1px rgba(0,0,0,.24)!important;}'
+    + '#br-stick .br-stick-buttons{flex:0 0 auto!important;display:flex!important;justify-content:center!important;align-items:center!important;gap:10px!important;margin:0!important;padding:0!important;background:transparent!important;box-sizing:border-box!important;}'
+    + '#br-stick .br-stick-btn{display:inline-flex!important;align-items:center!important;justify-content:center!important;height:48px!important;padding:0 18px!important;border-radius:8px!important;font-weight:900!important;text-decoration:none!important;'
+    + 'cursor:pointer;transition:transform 0.18s ease,box-shadow 0.18s ease,filter 0.18s ease;border:1.5px solid rgba(255,215,0,0.70);font-size:16px;min-width:0;text-align:center;'
+    + 'letter-spacing:0.3px;position:relative;box-shadow:0 3px 10px rgba(0,0,0,0.22),inset 0 1px 0 rgba(255,255,255,0.18);}'
+    + '#br-stick .br-stick-btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,0.30),inset 0 1px 0 rgba(255,255,255,0.22);filter:brightness(1.08);}'
+    + '#br-stick .br-stick-btn:active{transform:translateY(0);box-shadow:0 2px 6px rgba(0,0,0,0.22),inset 0 1px 0 rgba(255,255,255,0.12);}'
+    + '#br-stick .br-stick-register{min-width:190px!important;background:linear-gradient(180deg,#F1222E 0%,#B30F19 100%);color:#fff;border-color:#FF5A5A;text-shadow:0 1px 1px rgba(0,0,0,0.20);animation:brRegGlow 1.6s ease-in-out -0.8s infinite;}'
+    + '#br-stick .br-stick-register:hover{background:linear-gradient(180deg,#F0323D 0%,#C91824 100%);animation-play-state:paused;}'
+    + '@keyframes brRegGlow{0%,100%{box-shadow:0 3px 10px rgba(0,0,0,0.22),inset 0 1px 0 rgba(255,255,255,0.18),0 0 0 0 rgba(255,213,74,.65);}50%{box-shadow:0 5px 14px rgba(0,0,0,0.26),inset 0 1px 0 rgba(255,255,255,0.18),0 0 0 8px rgba(255,213,74,0);}}'
+    + '#br-stick .br-stick-login{min-width:88px!important;background:linear-gradient(180deg,#FFFFFF 0%,#F1F1F1 100%);color:#B30F19;border-color:rgba(255,255,255,.92);text-shadow:none;}'
+    + '#br-stick .br-stick-login:hover{background:linear-gradient(180deg,#FFFFFF 0%,#F6EAEA 100%);}'
+    + '@media(max-width:768px){#br-stick .br-stick-card{gap:8px!important;padding:7px 8px 7px 12px!important;}#br-stick .br-stick-promo{flex:1 1 auto!important;min-width:0!important;}#br-stick .br-stick-kicker{font-size:17px!important;letter-spacing:0!important;line-height:.95!important;}#br-stick .br-stick-kicker strong{display:inline!important;font-size:28px!important;line-height:.9!important;}#br-stick .br-stick-copy{margin-top:3px!important;font-size:12px!important;line-height:1.05!important;white-space:nowrap!important;}#br-stick .br-stick-buttons{flex:1 1 auto!important;gap:7px!important;}#br-stick .br-stick-btn{height:44px!important;border-radius:8px!important;padding-left:10px!important;padding-right:10px!important;font-size:13px!important;}#br-stick .br-stick-register{flex:2 1 0!important;min-width:120px!important;}#br-stick .br-stick-login{flex:1 1 0!important;min-width:64px!important;}#br-stick .br-stick-close{flex:0 0 30px!important;width:30px!important;height:30px!important;font-size:20px!important;}}'
+    + '@media(max-width:560px){#br-stick .br-stick-card{gap:7px!important;padding:6px 7px 6px 10px!important;}#br-stick .br-stick-gift{display:none!important;}#br-stick .br-stick-promo{flex:0 1 auto!important;}#br-stick .br-stick-kicker{font-size:16px!important;}#br-stick .br-stick-kicker strong{display:block!important;font-size:32px!important;line-height:.88!important;}#br-stick .br-stick-copy{font-size:12px!important;}#br-stick .br-stick-btn{height:42px!important;font-size:12px!important;}#br-stick .br-stick-register{min-width:104px!important;}#br-stick .br-stick-login{min-width:52px!important;}#br-stick .br-stick-close{flex:0 0 28px!important;width:28px!important;height:28px!important;font-size:19px!important;}}'
+    + '@media(max-width:380px){#br-stick .br-stick-card{gap:5px!important;padding-left:8px!important;padding-right:7px!important;}#br-stick .br-stick-kicker{font-size:14px!important;}#br-stick .br-stick-kicker strong{font-size:28px!important;}#br-stick .br-stick-copy{font-size:11px!important;}#br-stick .br-stick-btn{height:40px!important;}#br-stick .br-stick-register{min-width:88px!important;font-size:12px!important;}#br-stick .br-stick-login{flex:1 1 0!important;min-width:48px!important;font-size:12px!important;}#br-stick .br-stick-close{flex:0 0 26px!important;width:26px!important;height:26px!important;font-size:18px!important;}}'
+    + '@keyframes brFabBounce{0%,100%{transform:translateY(0);}50%{transform:translateY(-3px);}}';
+
+  var style = document.createElement('style');
+  style.appendChild(document.createTextNode(css));
+  (document.head || document.getElementsByTagName('head')[0]).appendChild(style);
+
+  var root = document.createElement('div');
+  root.id = 'br-stick';
+  root.innerHTML =
+    '<div class="br-stick-wrap">'
+    + '<div class="br-stick-card" role="region" aria-label="daftar / masuk">'
+    + '<div class="br-stick-promo" aria-label="promo">'
+    + '<span class="br-stick-gift" aria-hidden="true">&#127873;</span>'
+    + '<div class="br-stick-offer"><span class="br-stick-kicker">Bonus <strong>100%</strong></span><span class="br-stick-copy">Deposit Pertama</span></div>'
+    + '</div>'
+    + '<div class="br-stick-buttons">'
+    + '<a href="' + registerUrl + '" class="br-stick-btn br-stick-register" target="_blank" rel="nofollow noopener noreferrer">' + CFG.registerLabel + '</a>'
+    + '<a href="' + loginUrl + '" class="br-stick-btn br-stick-login" target="_blank" rel="nofollow noopener noreferrer">' + CFG.loginLabel + '</a>'
+    + '</div>'
+    + '<button class="br-stick-close" aria-label="tutup" type="button">×</button>'
+    + '</div>'
+    + '</div>';
+
+  function lockToVisualViewport() {
+    var vv = window.visualViewport || null, rafId;
+    function apply() {
+      if (rafId) cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(function () {
+        if (vv && window.innerWidth <= 768) {
+          root.style.left = vv.offsetLeft + 'px';
+          root.style.width = vv.width + 'px';
+          root.style.right = 'auto';
+          root.style.transform = 'translateZ(0)';
+          root.style.maxWidth = '100vw';
+        } else if (window.innerWidth > 768) {
+          root.style.left = '50%';
+          root.style.right = 'auto';
+          root.style.transform = 'translateX(-50%) translateZ(0)';
+          root.style.maxWidth = '620px';
+          root.style.width = 'min(620px, calc(100vw - 30px))';
+        }
+      });
+    }
+    apply();
+    if (vv && window.innerWidth <= 768) {
+      vv.addEventListener('resize', apply);
+      vv.addEventListener('scroll', apply);
+    }
+    window.addEventListener('resize', apply);
+    window.addEventListener('orientationchange', apply);
+  }
+
+  function mount() {
+    document.body.appendChild(root);
+    var closeBtn = root.getElementsByClassName('br-stick-close')[0];
+    if (closeBtn && closeBtn.addEventListener) {
+      closeBtn.addEventListener('click', function (e) {
+        if (e && e.stopPropagation) e.stopPropagation();
+        var el = document.getElementById('br-stick');
+        if (el && el.parentNode) el.parentNode.removeChild(el);
+        var co = document.getElementById('br-stick-coexist');
+        if (co && co.parentNode) co.parentNode.removeChild(co);
+      }, false);
+    }
+    lockToVisualViewport();
+  }
+
+  function ready(fn) {
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      setTimeout(fn, CFG.showDelay);
+    } else if (document.addEventListener) {
+      document.addEventListener('DOMContentLoaded', function () { setTimeout(fn, CFG.showDelay); }, false);
+    } else {
+      window.onload = function () { setTimeout(fn, CFG.showDelay); };
+    }
+  }
+  ready(mount);
+})();
+</script>
+
 
